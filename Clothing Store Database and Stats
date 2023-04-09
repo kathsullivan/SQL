@@ -1,0 +1,53 @@
+--Create a clothing store database
+
+CREATE TABLE clothing_store (id INTEGER PRIMARY KEY, type TEXT, size TEXT, price INTEGER, aisle TEXT);
+
+INSERT INTO clothing_store VALUES (1, "white pants", "small", 25, 1);
+
+INSERT INTO clothing_store VALUES (2, "black pants", "small", 25, 2);
+
+INSERT INTO clothing_store VALUES (3, "pink pants", "small", 25, 3);
+
+INSERT INTO clothing_store VALUES (4, "white shirts", "medium", 15, 4);
+
+INSERT INTO clothing_store VALUES (5, "black shirts", "medium", 15, 5);
+
+INSERT INTO clothing_store VALUES (6, "pink shirts", "medium", 15, 6);
+
+INSERT INTO clothing_store VALUES (7, "white pants", "medium", 25, 1);
+
+INSERT INTO clothing_store VALUES (8, "black pants", "medium", 25, 2);
+
+INSERT INTO clothing_store VALUES (9, "pink pants", "medium", 25, 3);
+
+INSERT INTO clothing_store VALUES (10, "white shirts", "large", 15, 4);
+
+INSERT INTO clothing_store VALUES (11, "black shirts", "large", 15, 5);
+
+INSERT INTO clothing_store VALUES (12, "pink shirts", "large", 15, 6);
+
+INSERT INTO clothing_store VALUES (13, "white pants", "large", 25, 1);
+
+INSERT INTO clothing_store VALUES (14, "black pants", "large", 25, 2);
+
+INSERT INTO clothing_store VALUES (15, "pink pants", "large", 25, 3);
+SELECT * FROM clothing_store;
+
+
+--Display the database ordered by size
+
+SELECT * FROM clothing_store ORDER BY size desc;
+
+
+--Display the database ordered by price
+
+SELECT * FROM clothing_store ORDER BY price asc;
+
+
+--What is the average price of items in the clothing store?
+
+SELECT AVG(price)
+FROM clothing_store
+
+
+
